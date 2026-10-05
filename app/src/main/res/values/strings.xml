@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Student Registration</string>
+
+    <string-array name="courses">
+        <item>Select Course</item>
+        <item>Information Communication Technology</item>
+        <item>Building Technology</item>
+        <item>Electrical Installation</item>
+        <item>Business Management</item>
+        <item>Agriculture</item>
+    </string-array>
+
+</resources>
