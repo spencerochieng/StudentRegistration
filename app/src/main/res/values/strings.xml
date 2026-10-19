@@ -11,4 +11,11 @@
         <item>Agriculture</item>
     </string-array>
 
+    <string name="display_full_name">Full Name: %1$s</string>
+    <string name="display_dob">Date of Birth: %1$s</string>
+    <string name="display_gender">Gender: %1$s</string>
+    <string name="display_course">Course: %1$s</string>
+    <string name="display_phone">Phone: %1$s</string>
+    <string name="display_email">Email: %1$s</string>
+
 </resources>

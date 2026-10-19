@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -144,7 +146,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Validate gender
-        if (radioGroupGender.getCheckedRadioButtonId() == -1) {
+        int selectedGenderId = radioGroupGender.getCheckedRadioButtonId();
+        if (selectedGenderId == -1) {
 
             Toast.makeText(
                     this,
@@ -154,6 +157,9 @@ public class MainActivity extends AppCompatActivity {
 
             return;
         }
+
+        RadioButton selectedRadioButton = findViewById(selectedGenderId);
+        String gender = selectedRadioButton != null ? selectedRadioButton.getText().toString() : "";
 
 
         // Validate course
@@ -189,10 +195,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        Toast.makeText(
-                this,
-                "Student registration details are valid",
-                Toast.LENGTH_LONG
-        ).show();
+        Intent intent = new Intent(MainActivity.this, RegistrationActivity.class);
+        intent.putExtra("EXTRA_FULL_NAME", fullName);
+        intent.putExtra("EXTRA_DATE_OF_BIRTH", dateOfBirth);
+        intent.putExtra("EXTRA_GENDER", gender);
+        intent.putExtra("EXTRA_COURSE", course);
+        intent.putExtra("EXTRA_PHONE", phone);
+        intent.putExtra("EXTRA_EMAIL", email);
+
+        startActivity(intent);
     }
 }
