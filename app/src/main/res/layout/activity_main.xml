@@ -1,132 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/screen_background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/screen_padding">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:contentDescription="@string/registration_title"
+            android:src="@drawable/ic_student_registration" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Student Registration"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="24dp" />
-
-        <!-- Full Name -->
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:text="@string/registration_title"
+            android:textColor="@color/brand_navy"
+            android:textSize="@dimen/screen_title_size"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Full Name" />
-
+            android:text="@string/label_full_name"
+            android:textColor="@color/text_primary" />
         <EditText
             android:id="@+id/edtFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter full name"
+            android:hint="@string/hint_full_name"
             android:inputType="textPersonName"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Date of Birth -->
+            android:layout_marginBottom="@dimen/field_spacing" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date of Birth" />
-
+            android:text="@string/label_date_of_birth"
+            android:textColor="@color/text_primary" />
         <EditText
             android:id="@+id/edtDateOfBirth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DD/MM/YYYY"
+            android:hint="@string/hint_date_of_birth"
             android:focusable="false"
             android:clickable="true"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Gender -->
+            android:layout_marginBottom="@dimen/field_spacing" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender" />
-
+            android:text="@string/label_gender"
+            android:textColor="@color/text_primary" />
         <RadioGroup
             android:id="@+id/radioGroupGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
-
+            android:layout_marginBottom="@dimen/field_spacing">
             <RadioButton
                 android:id="@+id/radioMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Male" />
-
+                android:text="@string/option_male" />
             <RadioButton
                 android:id="@+id/radioFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female" />
-
+                android:text="@string/option_female" />
         </RadioGroup>
-
-        <!-- Course -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Course" />
-
+            android:text="@string/label_course"
+            android:textColor="@color/text_primary" />
         <Spinner
             android:id="@+id/spinnerCourse"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Phone -->
+            android:layout_marginBottom="@dimen/field_spacing" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phone Number" />
-
+            android:text="@string/label_phone"
+            android:textColor="@color/text_primary" />
         <EditText
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter phone number"
+            android:hint="@string/hint_phone"
             android:inputType="phone"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Email -->
+            android:layout_marginBottom="@dimen/field_spacing" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email Address" />
-
+            android:text="@string/label_email"
+            android:textColor="@color/text_primary" />
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter email address"
+            android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="@dimen/section_spacing" />
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register" />
-
+            android:text="@string/action_register"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/brand_teal" />
     </LinearLayout>
-
 </ScrollView>

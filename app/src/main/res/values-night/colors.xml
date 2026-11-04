@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_navy">#A9C7E5</color>
+    <color name="brand_teal">#69D3C5</color>
+    <color name="brand_amber">#F4C96B</color>
+    <color name="screen_background">#101B29</color>
+    <color name="surface_white">#1B2939</color>
+    <color name="text_primary">#E7EEF6</color>
+    <color name="text_secondary">#B7C5D5</color>
+    <color name="divider">#39495B</color>
+    <color name="error_red">#F2B8B5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
