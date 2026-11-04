@@ -1,7 +1,21 @@
 <resources>
-
     <string name="app_name">Student Registration</string>
-
+    <string name="registration_title">Student Registration</string>
+    <string name="registration_success_title">Registration Successful</string>
+    <string name="label_full_name">Full Name</string>
+    <string name="hint_full_name">Enter full name</string>
+    <string name="label_date_of_birth">Date of Birth</string>
+    <string name="hint_date_of_birth">DD/MM/YYYY</string>
+    <string name="label_gender">Gender</string>
+    <string name="option_male">Male</string>
+    <string name="option_female">Female</string>
+    <string name="label_course">Course</string>
+    <string name="label_phone">Phone Number</string>
+    <string name="hint_phone">Enter phone number</string>
+    <string name="label_email">Email Address</string>
+    <string name="hint_email">Enter email address</string>
+    <string name="action_register">Register</string>
+    <string name="action_back">Back</string>
     <string-array name="courses">
         <item>Select Course</item>
         <item>Information Communication Technology</item>
@@ -10,12 +24,10 @@
         <item>Business Management</item>
         <item>Agriculture</item>
     </string-array>
-
     <string name="display_full_name">Full Name: %1$s</string>
     <string name="display_dob">Date of Birth: %1$s</string>
     <string name="display_gender">Gender: %1$s</string>
     <string name="display_course">Course: %1$s</string>
     <string name="display_phone">Phone: %1$s</string>
     <string name="display_email">Email: %1$s</string>
-
 </resources>
